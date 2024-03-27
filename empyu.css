@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Jolly Lodger", system-ui;
+
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    color: white;
+    padding: 8px;
+}
+nav a{
+    text-decoration: none;
+    
+}
+.logo{
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: "Delicious Handrawn", cursive;
+}
+nav a:active{
+    color: red;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+        display: none;
+    }
+    .contpara main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
+
+li a{
+    font-size: 30px;
+}
+
+button{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    cursor: pointer;
+   
+    /* font-family: "Meddon", cursive; */
+}
+button a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    
+}

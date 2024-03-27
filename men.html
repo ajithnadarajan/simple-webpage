@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="navitems.css">
+     
+     <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Jolly+Lodger&family=Jura:wght@300..700&family=Meddon&family=Rationale&display=swap"
+      rel="stylesheet"
+    />
+     
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+         <li><a href="index.html" style="color: white;">Home</a></li> 
+        </ul>
+     </nav>
+
+    <div class="cont">
+        <div class="calsi">
+            <h1 id="vb">{time} </h1>
+        <h1>Calculator</h1>
+        <input type="text" id="inps" placeholder="Enter Value..." readonly="">
+    
+        <div class="btns">
+        <button onclick="add(0)">0</button>
+        <button onclick="add(1)">1</button>
+        <button onclick="add(2)">2</button>
+        <button onclick="add(3)">3</button>
+        <button onclick="add(4)">4</button>
+        <button onclick="add(5)">5</button>
+        <button onclick="add(6)">6</button>
+        <button onclick="add(7)">7</button>
+        <button onclick="add(8)">8</button>
+        <button onclick="add(9)">9</button>
+        <button onclick="add('+')">+</button>
+        <button onclick="add('-')">-</button>
+        <button onclick="add('/')">/</button>
+        <button onclick="add('*')">*</button>
+        </div>
+        <button onclick="exe()">=</button>
+        <button onclick="cancel()">⌫</button>
+        <button onclick="cls()">c</button>
+        </div>
+        <script>
+        var val=document.getElementById("inps");
+        const d = new Date();
+        let time = d.getHours();
+        let min =d.getMinutes();
+        let t1= document.getElementById("vb")
+        t1.textContent=time;
+        if(time<12)
+        {
+            alert("good morning");
+        }
+        else if(time<15)
+        {
+            alert("good afternoon");  
+        }
+        else if(time<19){
+            alert("good evening");  
+        }
+        else{
+            alert("good night");  
+        }
+
+        function add(v){
+        val.value+=v;
+        }
+        
+        
+        function cls(){
+        val.value="0";
+        }
+        
+        function exe(){
+        val.value=eval(val.value);
+       
+        }
+        function cancel(){
+         val.value="0";
+        }</script>
+
+        <button id="clrbtn">Click Me!</button>
+       <script>
+        let btnclrbtn = document.querySelector('#clrbtn')
+        
+        btnclrbtn.addEventListener('click', () => btnclrbtn.style.backgroundColor='yellow')
+       </script>
+    
+</body>
+</html>

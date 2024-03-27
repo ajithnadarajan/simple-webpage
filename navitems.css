@@ -1,0 +1,153 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: whitesmoke;
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.calsi {
+  width: 350px;
+  padding: 0;
+  margin: 100px auto;
+  text-align: center;
+  background: black;
+  box-shadow: 0px 0px 6px 0px #0006;
+}
+.calsi h1 {
+  font-size: 40px;
+  font-family: calibri;
+  font-weight: bold;
+  color: white;
+  text-transform: cepitalize;
+  padding: 8px 0px;
+  text-align: center;
+  width: 100%;
+  background: #222;
+  margin: 0 auto;
+}
+#inps {
+  position: relative;
+  width: 100%;
+  padding: 8px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-family: arial;
+  font-weight: normal;
+  color: #222;
+  outline: none;
+  border: none;
+  background: white;
+}
+.btns {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+}
+.btns button {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: #222;
+  vertical-align: middle;
+  border-radius: 5px;
+  background: white;
+  margin: 10px 5px;
+  display: inline-block;
+}
+button {
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  color: #222;
+  border-radius: 5px;
+  vertical-align: middle;
+  background: white;
+  margin: 10px 5px;
+  display: inline-block;
+}
+@media all and(max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
+  .wrapper {
+    justify-content: center;
+    margin-left: 5%;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Lexend Peta", sans-serif;
+  font-weight: 500;
+}
+
+.price {
+  color: red;
+  font-size: 22px;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 320px;
+  float: left;
+  margin-right: 15px;
+}
+.shirtprice {
+  color: red;
+  font-weight: 900;
+  font-size: x-large;
+}
+h2 {
+  font-weight: bolder;
+  font-family: "Lexend Peta", sans-serif;
+}
+offer {
+  color: green;
+  font-family: "Lexend Peta", sans-serif;
+  font-weight: 900;
+}
+span {
+  text-decoration: line-through;
+  color: black;
+}
+nav {
+  background-color: black;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Jolly Lodger", system-ui;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  color: white;
+  padding: 8px;
+}
+nav a {
+  text-decoration: none;
+}
